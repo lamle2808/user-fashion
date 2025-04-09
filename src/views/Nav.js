@@ -169,7 +169,7 @@ const Nav = () => {
                   </Box>
                 </Link>
 
-                <Typography sx={{ fontWeight: "bold" }}>Cá nhân</Typography>
+                <Typography sx={{ fontWeight: "bold" }}>{user.firstName}</Typography>
               </Stack>
             ) : (
               // Chưa đăng nhập và user không tồn tại, hiển thị "Đăng nhập"

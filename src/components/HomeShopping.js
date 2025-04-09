@@ -21,7 +21,7 @@ const HomeShopping = () => {
       try {
         let res = await axios.get("/api/v1/products/getAll");
         let data = res && res.data ? res.data : [];
-        setDataPhone(data);
+        setDataPhone(data.filter(item => item.loHang !== null));
       } catch (error) {
         console.error("Error fetching data:", error);
       }

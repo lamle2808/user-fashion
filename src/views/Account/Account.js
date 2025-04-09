@@ -153,12 +153,12 @@ function Account() {
             </Stack>
 
             <FormControl variant="standard" fullWidth sx={{ marginTop: 2 }}>
-              <InputLabel id="demo-simple-select-label">Age</InputLabel>
+              <InputLabel id="demo-simple-select-label">Giới tính</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={sex}
-                label="Age"
+                label="Giới tính"
                 onChange={handleChange}
               >
                 <MenuItem value={0}>Nam</MenuItem>
@@ -170,7 +170,7 @@ function Account() {
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DesktopDatePicker
                   sx={{ width: "100%" }}
-                  label="Ngày bắt đầu"
+                  label="Ngày sinh"
                   value={dayjs(birth)}
                   openTo="year"
                   fullWidth
